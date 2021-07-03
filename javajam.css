@@ -496,7 +496,34 @@
 	background-color: #f3f3f3;
 }
 
-.reviews-container {
+.review-cards {
+	overflow: hidden;
+	justify-content: center;
+	position: relative;
+}
+
+.visible {
+	visibility: visible;
+	/*display: block;*/
+	animation: fadeVisibility 0.5s;
+}
+
+.hidden{
+	visibility: hidden;
+	display: none;
+}
+
+@keyframes fadeVisibility {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		transform: opacity linear;
+	}
+}
+
+.review {
 	background-color: #fff;
 	width: 600px;
 	display: flex;
@@ -506,16 +533,12 @@
 	text-align: left;
 	padding: 30px;
 	box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
-	position: relative;
+	margin-bottom: 10px;
 }
 
 .user-icon i {
 	font-size: 8.2rem;
 	margin-bottom: 10px;
-}
-
-.review {
-	padding-bottom: 1rem;
 }
 
 .customer-name {
@@ -530,9 +553,10 @@
 .star {
 	color: #BD7253;
 	font-size: 1rem;
+	padding-bottom: 1rem;
 }
 
-.prevBtn, .nextBtn {
+#prevBtn, #nextBtn {
 	color: #BD7253;
 	font-size: 1.8rem;
 	width: 45px;
@@ -543,21 +567,23 @@
 	border-radius: 50%;
 	text-align: center;
 	transition: all 0.3s ease;
+	border: none;
+	background-color: #fff;
 }
 
-.prevBtn {
+#prevBtn {
 	position: absolute;
 	top: 10%;
 	right: 14%;
 }
 
-.nextBtn {
+#nextBtn {
 	position: absolute;
 	top: 10%;
 	right: 5%;
 }
 
-.prevBtn:hover, .nextBtn:hover {
+#prevBtn:hover, #nextBtn:hover {
 	background-color: #BD7253;
 	color: #fff;
 }
@@ -658,51 +684,56 @@
 	}
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 624px) {
 	.services {
 		display: flex;
 		flex-direction: column;
 	}
-
 	.service, .service-header, .service-text {
 		flex-basis: 80%;
 		align-items: center;
 		justify-content: center;
 		text-align: center;
 	}
-
 	.card {
 		width: 100%;
 		flex-direction: column;
 	}
-
 	.card .item-img {
 		display: flex;
 		width: 100%;
 		flex-direction: row;
 
 	}
-
 	.item-img img {
 		width: 100%;
 	}
-
 	.visit {
 		display: flex;
 		flex-direction: column-reverse;
 	}
-
 	.col-left {
 		float: none;
 		width: 100%;
 	}
-
 	.col-left img {
 		width: 100%;
 		height: 100vh;
 		object-fit: cover;
 		opacity: 1;
 		filter: none;
+	}
+	.review-cards {
+		width: 80%;
+	}
+	.review-cards .review {
+		width: 100%;
+		padding-bottom: 20px;
+	}
+	#prevBtn {
+		position: absolute;
+		top: 10%;
+		right: 16%;
 	}
 
 }
