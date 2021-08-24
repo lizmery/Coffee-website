@@ -1,4 +1,4 @@
-# Coffee Shop (Under Co.)
+# Coffee Shop
 A coffee shop website demo.
 
 [View Live](https://local-coffee-demo.netlify.app/)
@@ -9,17 +9,15 @@ A coffee shop website demo.
 - JavaScript
 
 ## Features
-- Animated landing page (CSS keyframes)
+- Dark/Light theme switch
 - CSS grid
 - Testimonials slider (JavaScript)
+- embedded google maps
 - Responsive design
 
 ## Screenshots
-![Screen Shot 2021-08-19 at 1 24 52 PM](https://user-images.githubusercontent.com/78451440/130138993-0e43a0a7-8205-40b7-a155-aeef18ce8ce9.png)
-![Screen Shot 2021-08-19 at 1 25 05 PM](https://user-images.githubusercontent.com/78451440/130139011-df7b8f56-ba1d-4e86-a072-c4fa4ba9962e.png)
-![Screen Shot 2021-08-19 at 1 25 16 PM](https://user-images.githubusercontent.com/78451440/130139016-a06bc06d-a113-40f1-b32e-0da068ca5317.png)
+![Screen Shot 2021-08-24 at 1 18 28 PM](https://user-images.githubusercontent.com/78451440/130684400-6f6a8670-3c4c-4c19-85bc-99d2bc45e789.png)
+![Screen Shot 2021-08-24 at 1 18 49 PM](https://user-images.githubusercontent.com/78451440/130684413-dbfcadc7-f21b-40a6-b1ea-20b7d63de01e.png)
+![Screen Shot 2021-08-24 at 1 19 37 PM](https://user-images.githubusercontent.com/78451440/130684414-09c4815d-b48a-41c9-b84d-7adf678a3971.png)
+![Screen Shot 2021-08-24 at 1 19 49 PM](https://user-images.githubusercontent.com/78451440/130684417-d4080219-7213-43e1-941e-2bd9dd9dacf7.png)
 
-## In-Progress
-- Updating the website design/layout
-- Include google maps in the contact section
-- Adding a shopping cart feature
